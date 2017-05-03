@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order>
+  <meta>
+    <name>Multiple of 3 or 5</name>
+    <desc>
+      If we list all the natural numbers below 10 that are multiples 
+      of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+    </desc>
+    <goals>
+      <goal>Find the sum of all the multiples of 3 or 5 below 10.</goal>
+      <goal>Find the sum of all the multiples of 3 or 5 below 100.</goal>
+      <goal>Find the sum of all the multiples of 3 or 5 below 1000.</goal>
+    </goals>
+    <link>https://projecteuler.net/problem=1</link>
+  </meta>
+  <muls below="16" all="75" once="60">
+    <mul id="3">3,6,9,12,15</mul>
+    <mul id="5">5,10,15</mul>
+  </muls>
+</order>
