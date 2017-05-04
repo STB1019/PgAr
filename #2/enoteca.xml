@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order>
+  <meta>
+    <name>Enoteca</name>
+    <desc>
+    <!-- add description -->
+    </desc>
+    <constraints>
+      <constrain>
+        use interface
+      </constrain>
+      <constrain>
+        1>0
+      </constrain>
+    </constraints>
+    <queries>
+      <query><!-- Insert query here --></query>
+    </queries>
+  </meta>
+  <wines>
+    <wine>
+      <name>Tavernello</name>
+      <price val="$">5.50</price>
+      <date>
+        2015
+      </date>
+      <geo>
+        Lombardia
+      </geo>
+      <farmer>
+        Gastaldi
+      </farmer>
+    </wine>
+  </wines>
+</order>
