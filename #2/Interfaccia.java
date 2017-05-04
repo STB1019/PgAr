@@ -6,6 +6,6 @@ public interface Interfaccia {
 	
 	public void possibileGuadagno(String valuta);
 	
-	public Class<?> stampaFasciaVini(Object annoInizio, Object annoFine);
+	public java.util.Collection<?> stampaFasciaVini(int annoInizio, int annoFine);
 	
 }
