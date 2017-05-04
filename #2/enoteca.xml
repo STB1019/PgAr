@@ -3,18 +3,34 @@
   <meta>
     <name>Enoteca</name>
     <desc>
-    <!-- add description -->
+Si richiede di creare un programma, con interfaccia a riga di comando, che ci aiuta a gestire il magazzino di una Enoteca, per la creazione completa del progetto si fanno le seguenti richieste:
     </desc>
     <constraints>
       <constrain>
-        use interface
+        Usare l'Interfaccia
       </constrain>
       <constrain>
-        1>0
+        Tenere traccia dei Vini in base al Nome del Prodotto
+      </constrain>
+      <constrain>
+        Tenere traccia dei Vini in base al Nome del Produttore del Vino
+      </constrain>
+      <constrain>
+        Tenere traccia dei Vini in base all’Annata
+      </constrain>
+      <constrain>
+        Tenere traccia dei Vini in base alla Regione di Produzione
+      </constrain>
+      <constrain>
+        Tenere traccia dei Vini in base al costo del Singolo Pezzo
       </constrain>
     </constraints>
     <queries>
-      <query><!-- Insert query here --></query>
+      <query>Stampare la lista dei vini contenuti nel magazzino</query>
+      <query>Stampare la quantità di bottiglie per ogni Vino</query>
+      <query>Stampare la quantità di Bottiglie per ogni Produttore</query>
+      <query>Stampare il possibile guadagno in Multi-valuta, data come variabile esterna la valuta desiderata</query>
+      <query>Data una certa fascia di Annata (es. dal 1990 al 2015) stampare tutti i vini</query>
     </queries>
   </meta>
   <wines>
@@ -27,9 +43,9 @@
       <geo>
         Lombardia
       </geo>
-      <farmer>
-        Gastaldi
-      </farmer>
+      <winery>
+        La Coccinella Bianca SRLs
+      </winery>
     </wine>
   </wines>
 </order>
