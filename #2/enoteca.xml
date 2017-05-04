@@ -37,15 +37,86 @@ Si richiede di creare un programma, con interfaccia a riga di comando, che ci ai
     <wine>
       <name>Tavernello</name>
       <price val="$">5.50</price>
+      <cont>5</cont>
       <date>
         2015
       </date>
       <geo>
         Lombardia
       </geo>
-      <winery>
-        La Coccinella Bianca SRLs
-      </winery>
+      <farmer>
+        Gastaldi
+      </farmer>
     </wine>
+    <wine>
+      <name>Chianti</name>
+      <price val="€">12.50</price>
+      <cont>20</cont>
+      <date>
+        2013
+      </date>
+      <geo>
+        Catania
+      </geo>
+      <farmer>
+        Bellucci
+      </farmer>
+    </wine>
+    <wine>
+      <name>Sangiovese</name>
+      <price val="€">23.32</price>
+      <cont>2</cont>
+      <date>
+        1988
+      </date>
+      <geo>
+        Veneto
+      </geo>
+      <farmer>
+        Gorizia
+      </farmer>
+    </wine>   
+    <wine>
+      <name>Bolloc</name>
+      <price val="€">5463.097</price>
+      <cont>20</cont>
+      <date>
+        1789
+      </date>
+      <geo>
+        Parigi
+      </geo>
+      <farmer>
+        Il Francesino
+      </farmer>
+    </wine>
+    <wine>
+      <name>Frizzantino</name>
+      <price val="$">123.3456</price>
+      <cont></cont>
+      <date>
+        1990
+      </date>
+      <geo>
+        Brescia
+      </geo>
+      <farmer>
+        Pota
+      </farmer>
+    </wine>
+      <wine>
+        <name>Botarga</name>
+        <price val="$">234234.34</price>
+        <cont>13</cont>
+        <date>
+          160
+        </date>
+        <geo>
+          Palestina
+        </geo>
+        <farmer>
+          Krafel
+        </farmer>
+      </wine>
   </wines>
 </order>
