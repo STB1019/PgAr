@@ -93,7 +93,7 @@ Si richiede di creare un programma, con interfaccia a riga di comando, che ci ai
     <wine>
       <name>Frizzantino</name>
       <price val="$">123.3456</price>
-      <cont></cont>
+      <cont>456</cont>
       <date>
         1990
       </date>
