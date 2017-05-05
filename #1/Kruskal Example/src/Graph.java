@@ -23,6 +23,7 @@ public class Graph {
 
     // Function to add an edge into the graph
     public void addEdge(int v1, int v2) {
+        //Undirected graph -> symmetrical links
         adjacency[v1].add(v2);
         adjacency[v2].add(v1);
     }
