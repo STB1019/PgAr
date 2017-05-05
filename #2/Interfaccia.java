@@ -2,10 +2,12 @@ public interface Interfaccia {
 
 	public String stampaVino();
 	
-	public long numeroVini(String nome);
+	public long numeroViniPerNomeVino(String nome);
+	
+	public long numeroViniPerNomeProduttore(String nome);
 	
 	public void possibileGuadagno(String valuta);
 	
-	public Class<?> stampaFasciaVini(Object annoInizio, Object annoFine);
+	public java.util.Collection<?> stampaFasciaVini(int annoInizio, int annoFine);
 	
 }
