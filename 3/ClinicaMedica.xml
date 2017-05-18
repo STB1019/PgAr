@@ -2,7 +2,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <order>
   <meta>
-    <name>Enoteca</name>
+    <name>Clinica Medica</name>
     <description>
       Si richiede di creare un programma, con interfaccia a riga di comando, che ci aiuta a gestire Una Clinica Medica, con le
       seguenti caratteristiche:
