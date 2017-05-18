@@ -8,7 +8,7 @@ public interface Interfaccia {
 
 	public String stampaPazienti(); //Stampa tutti i Pazienti inseriti nel Programma
 
-	public Collection<T> stampaAppuntamenti(int dataInizio, int dataFine); //Stampa gli appuntamenti su un certo intervallo
+	public Collection<T> stampaAppuntamenti(E dataInizio, E dataFine); //Stampa gli appuntamenti su un certo intervallo
 
 	public  stampaNumAppuntamenti(int matricola); //Stampa il numero di appuntamenti per un certo Medico
 
