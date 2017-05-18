@@ -10,7 +10,7 @@ public interface Interfaccia {
 
 	public Collection<T> stampaAppuntamenti(E dataInizio, E dataFine); //Stampa gli appuntamenti su un certo intervallo
 
-	public Collection<T> stampaNumAppuntamenti(int matricola); //Stampa il numero di appuntamenti per un certo Medico
+	public String stampaNumAppuntamenti(int matricola); //Stampa il numero di appuntamenti per un certo Medico
 
 	//Ho inserito le funzionalità di base, così potete sbizzarrirvi nel creare gli altri Metodi
 
