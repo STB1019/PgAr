@@ -1,5 +1,5 @@
 # PgAr
-Programma Arnaldo 2017
+Programma Arnaldo 2018
 
 **Esercizi** contiene l'elenco degli esercizi proposti durante il corso.
 
