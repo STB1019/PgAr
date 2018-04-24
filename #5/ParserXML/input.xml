@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diary>
+	  <meta>
+		      <name>Diary</name>
+		          <time>
+				        <start>27 April 2017 00:00:00</start>
+					      <end>+10 day</end>
+					          </time>
+						      <desc>Some URL or little text like this!</desc>
+						        </meta>
+							  <contacts>
+								      <user>
+									          <name>Gastaldo</name>
+										      <surname>Frinzi</surname>
+										          </user>
+											    </contacts>
+										    </diary>
