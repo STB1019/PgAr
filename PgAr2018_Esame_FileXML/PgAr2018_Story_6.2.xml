@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Programma Arnaldo 2018
+File XML di testing per il modulo 6.
+
+Il seguente documento è stato prodotto da Michele Dusi per lo Student Branch IEEE dell'Università degli Studi di Brescia.
+-->
+<storygame>
+	<story title="La rapina del secolo" size="13">
+		<paragraph id="0" type="basic">
+			<description>
+Dopo mesi di progettazione accurata, di studio dei piani e di preparazione fisica, è arrivato il momento di compiere la rapina perfetta.
+Grazie ai tuoi complici sei riuscito/a ad introdurti nell'edificio della banca, portando con te tutta l'attrezzatura. Non ti resta che recuperare le due chiavi necessarie ad aprire il caveau e il bottino sarà tuo.
+Ora è necessario capire come muoversi: che cosa fai?
+			</description>
+			<option linkto="1">
+				Mi dirigo verso le cassette di sicurezza.
+			</option>
+			<option linkto="3">
+				Mi dirigo nella stanza dei registri.
+			</option>
+			<option linkto="5">
+				Mi dirigo verso il caveau.
+			</option>
+         	</paragraph>
+		<paragraph id="1" type="basic">
+			<description>
+La guardia che controlla le cassette di sicurezza sembra essersi addormentata. Evidentemente fare il turno di notte è più stancante di quanto si pensi.
+Potresti quasi pensare di rubargli le chiavi che porta appese al collo, sebbene comporti il rischio di essere scoperti...
+			</description>
+			<option linkto="2">
+				Provo a rubare la chiave che porta al collo.
+			</option>
+			<option linkto="11">
+				Meglio non rischiare e attendere che si distragga, o che le perda d'occhio.
+			</option>
+         	</paragraph>
+		<paragraph id="2" type="loot">
+			<description>
+Con una mossa svelta e precisa riesci a rubare il mazzo di chiavi che porta appeso al collo. Una delle chiavi sembra essere proprio quella necessaria ad aprire il caveau!
+			</description>
+			<item name="chiave">
+			<option linkto="0">
+				Torno nella hall della banca.
+			</option>
+         	</paragraph>
+		<paragraph id="3" type="basic">
+			<description>
+Le telecamere di sorveglianza dei registri sembrano puntare proprio l'armadietto in cui sono contenute le chiavi. Dovrai riuscire a sottrarle senza che queste ti riprendano...
+			</description>
+			<option linkto="4">
+				Cerco di manomettere i loro circuiti.
+			</option>
+			<option linkto="12">
+				Provo ad oscurarle con della vernice spray.
+			</option>
+         	</paragraph>
+		<paragraph id="4" type="loot">
+			<description>
+Manomettendo i circuiti riesci a fissare l'immagine che la telecamera trasmette in maniera che non noti i tuoi movimenti. Ora puoi avanzare fino all'armadietto e sottrarre una delle chiavi del caveau!
+			</description>
+			<item name="chiave">
+			<option linkto="0">
+				Sottraggo la chiave e torno nella hall.
+			</option>
+         	</paragraph>
+		<paragraph id="5" type="basic">
+			<description>
+Ti trovi nella stanza del caveau. Davanti a te vedi una grande porta blindata con due serrature. Sembrerebbero essere necessarie due chiavi...
+			</description>
+			<option linkto="0">
+				Torno nella hall e provo a cercare le chiavi.
+			</option>
+			<option linkto="6">
+				Provo ad inserire le chiavi nelle serrature.
+			</option>
+         	</paragraph>
+		<paragraph id="6" type="gate">
+			<item name="chiave">
+			<option linkto="7">
+				(Opzione non visualizzata -> Inserimento della prima chiave)
+			</option>
+			<option linkto="9">
+				(Opzione non visualizzata -> Non sono presenti chiavi nell'inventario)
+			</option>
+         	</paragraph>
+		<paragraph id="7" type="gate">
+			<item name="chiave">
+			<option linkto="8">
+				(Opzione non visualizzata -> Inserimento della seconda chiave)
+			</option>
+			<option linkto="10">
+				(Opzione non visualizzata -> Nell'inventario non è presente la seconda chiave)
+			</option>
+         	</paragraph>
+		<paragraph id="8" type="basic" ending="true">
+			<description>
+Inserisci entrambe le chiavi che hai sottratto alla guardia e che hai trovato nell'armadietto nelle due fessure della porta blindata. La serratura produce un rumore metallico, poi l'enorme porta comincia lentamente ad aprirsi...
+
+Congratulazioni! Hai terminato l'avventura "La rapina del secolo" 
+			</description>
+         	</paragraph>
+		<paragraph id="9" type="basic">
+			<description>
+Pare proprio che, senza le due chiavi, la porta blindata sia impossibile da aprire.
+Piuttosto che tentare di forzarla, sembrerebbe meglio cercare le chiavi negli altri ambienti della banca.
+			</description>
+			<option linkto="5">
+				Torno al caveau.
+			</option>
+         	</paragraph>
+		<paragraph id="10" type="loot">
+			<description>
+provi ad inserire l'unica chiave che hai recuperato, ma da sola sembra fare ben poco.
+			</description>
+			<item name="chiave">
+			<option linkto="9">
+				Procedo.
+			</option>
+         	</paragraph>
+		<paragraph id="11" type="basic">
+			<description>
+Effettivamente è meglio non rischiare: una guardia sveglia potrebbe rovinare l'intero piano.
+Meglio tornare più tardi.
+			</description>
+			<option linkto="0">
+				Torno nella hall della banca.
+			</option>
+         	</paragraph>
+		<paragraph id="12" type="basic">
+			<description>
+Recuperi la bomboletta spray dallo zaino, ma quando la prendi in mano ti accorgi che l'intero contenuto è fuoriuscito e ha imbrattato tutta la tua attrezzatura.
+Così ridotta la bomboletta è ormai inutilizzabile.
+			</description>
+			<option linkto="0">
+				Torno nella hall a prenderne un'altra.
+			</option>
+         	</paragraph>
+    </story>
+</storygame>
