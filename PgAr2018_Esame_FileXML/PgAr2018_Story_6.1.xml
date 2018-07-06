@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<storygame>
 <!--
 Programma Arnaldo 2018
 File XML di testing per il modulo 6.
 
 Il seguente documento è stato prodotto da Michele Dusi per lo Student Branch IEEE dell'Università degli Studi di Brescia.
 -->
-<storygame>
 	<story title="Storia di testing - Modulo 6" size="5">
 		<paragraph id="0" type="basic">
 			<description>

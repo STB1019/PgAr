@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<storygame>
 <!--
 Programma Arnaldo 2018
 File XML di testing per il modulo 5.
 
 Il seguente documento è stato prodotto da Michele Dusi per lo Student Branch IEEE dell'Università degli Studi di Brescia.
 -->
-<storygame>
 	<character statsnumber="2">
 		<defstat name="x" initvalue="0" />
 		<defstat name="y" initvalue="0" />
