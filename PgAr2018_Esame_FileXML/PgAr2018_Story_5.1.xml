@@ -20,17 +20,16 @@ La seconda, al contrario, varia di volta in volta in base alle scelte.
 			<option linkto="1">
 				Aumenta la statistica B di 10 unità.
 				<stat name="statisticaA" change="1" />
-				<stat name="statisticaB" change="-10" />
+				<stat name="statisticaB" change="10" />
 			</option>
 			<option linkto="2">
 				Lascia invariata la statistica B.
 				<stat name="statisticaA" change="1" />
-				<stat name="statisticaB" change="-10" />
 			</option>
 			<option linkto="3">
 				Diminuisci la statistica B di 3 unità.
 				<stat name="statisticaA" change="1" />
-				<stat name="statisticaB" change="-10" />
+				<stat name="statisticaB" change="-3" />
 			</option>
 		</paragraph>
 		<paragraph id="1" type="basic">
@@ -49,6 +48,7 @@ Procedi.
 Avendo scelto questo paragrafo la statistica B è rimasta invariata.
 			</description>
 			<option linkto="4">
+Procedi.
 				<stat name="statisticaA" change="1" />
 			</option>
 		</paragraph>
@@ -58,6 +58,7 @@ Avendo scelto questo paragrafo la statistica B è rimasta invariata.
 Avendo scelto questo paragrafo la statistica B è stata diminuita di 3 unità.
 			</description>
 			<option linkto="4">
+Procedi.
 				<stat name="statisticaA" change="1" />
 			</option>
 		</paragraph>
@@ -78,9 +79,7 @@ Ora è possibile scegliere se ripetere il ciclo o terminare l'esecuzione della s
 		</paragraph>
 		<paragraph id="5" type="basic" ending="true">
 			<description>
-				Questo è il paragrafo iniziale. All'avvio della storia vengono inizializzate due statistiche, definite "statisticaA" e "statisticaB", rispettivamente ai valori 0 e 30.
-La prima aumenta di uno ad ogni scelta dell'utente, e può essere utilizzata - ad esempio - per tenere il conto del numero di scelte fatte.
-La seconda, al contrario, varia di volta in volta in base alle scelte.
+				Questo è il paragrafo finale. Ora le statistiche dovrebbero essere visualizzate automaticamente.
 			</description>
 		</paragraph>
 	</story>
