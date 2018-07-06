@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Programma Arnaldo 2018
+File XML di testing per il modulo 5.
+
+Il seguente documento è stato prodotto da Michele Dusi per lo Student Branch IEEE dell'Università degli Studi di Brescia.
+-->
+<storygame>
+	<character statsnumber="2">
+		<defstat name="statisticaA" initvalue="0" />
+		<defstat name="statisticaB" initvalue="30" />
+	</character> 
+	<story title="Storia di testing - Modulo 5" size="6">
+		<paragraph id="0" type="basic">
+			<description>
+				Questo è il paragrafo iniziale. All'avvio della storia vengono inizializzate due statistiche, definite "statisticaA" e "statisticaB", rispettivamente ai valori 0 e 30.
+La prima aumenta di uno ad ogni scelta dell'utente, e può essere utilizzata - ad esempio - per tenere il conto del numero di scelte fatte.
+La seconda, al contrario, varia di volta in volta in base alle scelte.
+			</description>
+			<option linkto="1">
+				Aumenta la statistica B di 10 unità.
+				<stat name="statisticaA" change="1" />
+				<stat name="statisticaB" change="-10" />
+			</option>
+			<option linkto="2">
+				Lascia invariata la statistica B.
+				<stat name="statisticaA" change="1" />
+				<stat name="statisticaB" change="-10" />
+			</option>
+			<option linkto="3">
+				Diminuisci la statistica B di 3 unità.
+				<stat name="statisticaA" change="1" />
+				<stat name="statisticaB" change="-10" />
+			</option>
+		</paragraph>
+		<paragraph id="1" type="basic">
+			<description>
+				Paragrafo con id=1.
+Avendo scelto questo paragrafo la statistica B è stata aumentata di 10 unità.
+			</description>
+			<option linkto="4">
+Procedi.
+				<stat name="statisticaA" change="1" />
+			</option>
+		</paragraph>
+		<paragraph id="2" type="basic">
+			<description>
+				Paragrafo con id=2.
+Avendo scelto questo paragrafo la statistica B è rimasta invariata.
+			</description>
+			<option linkto="4">
+				<stat name="statisticaA" change="1" />
+			</option>
+		</paragraph>
+		<paragraph id="3" type="basic">
+			<description>
+				Paragrafo con id=3.
+Avendo scelto questo paragrafo la statistica B è stata diminuita di 3 unità.
+			</description>
+			<option linkto="4">
+				<stat name="statisticaA" change="1" />
+			</option>
+		</paragraph>
+		<paragraph id="4" type="basic">
+			<description>
+				Paragrafo con id=4.
+Questo paragrafo viene raggiunto qualunque sia la scelta effettuata al paragrafo iniziale.
+Ora è possibile scegliere se ripetere il ciclo o terminare l'esecuzione della storia.
+			</description>
+			<option linkto="0">
+				Ritorna all'inizio e ripeti il ciclo.
+				<stat name="statisticaA" change="1" />
+			</option>
+			<option linkto="5">
+				Termina la storia.
+				<stat name="statisticaA" change="1" />
+			</option>
+		</paragraph>
+		<paragraph id="5" type="basic" ending="true">
+			<description>
+				Questo è il paragrafo iniziale. All'avvio della storia vengono inizializzate due statistiche, definite "statisticaA" e "statisticaB", rispettivamente ai valori 0 e 30.
+La prima aumenta di uno ad ogni scelta dell'utente, e può essere utilizzata - ad esempio - per tenere il conto del numero di scelte fatte.
+La seconda, al contrario, varia di volta in volta in base alle scelte.
+			</description>
+		</paragraph>
+	</story>
+</storygame>

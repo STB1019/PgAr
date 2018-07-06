@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Programma Arnaldo 2018
+File XML di testing per il modulo 5.
+
+Il seguente documento è stato prodotto da Michele Dusi per lo Student Branch IEEE dell'Università degli Studi di Brescia.
+-->
+<storygame>
+	<character statsnumber="2">
+		<defstat name="x" initvalue="0" />
+		<defstat name="y" initvalue="0" />
+	</character> 
+	<story title="Labirinth" size="9">
+		<paragraph id="0" type="basic">
+			<description>
+				Ti ritrovi in uno strano ambiente, illuminato dalle fioche luci di alcune candele. Intorno a te ci sono dei grossi muri di pietra, che sembrano invitarti a procedere lungo quello strano corridoio che si allunga verso est. Forse un labirinto, forse una tomba. In tasca ritrovi un taccuino e una penna: ottimo, potrai usarlo per segnare i tuoi spostamenti.
+Sul foglio scrivi: "0,0". 
+Sono le tue coordinate.
+Se tutto va bene, sarai fuori di qui in pochissimo tempo.
+Cosa fai?
+			</description>
+			<option linkto="1">
+				Procedo verso l'interno
+				<stat name="x" change="1" />
+			</option>
+         	</paragraph>
+		<paragraph id="1" type="basic">
+			<description>
+				Arrivi ad un bivio. Una strada procede verso est, l'altra verso sud. Non c'è tempo per sceglierle entrambe, cosa fai?
+			</description>
+			<option linkto="0">
+				Torno indietro, forse è meglio.
+				<stat name="x" change="-1" />
+			</option>
+			<option linkto="2">
+				Procedo lungo lo stesso corridoio, sembrava la strada giusta.
+				<stat name="x" change="1" />
+			</option>
+			<option linkto="4">
+				Cambio strada, da sud sembra arrivare una strana brezza.
+				<stat name="y" change="1" />
+			</option>
+         	</paragraph>
+		<paragraph id="2" type="basic">
+			<description>
+				Un vicolo cieco.
+Peccato, il corridoio sembrava promettente.
+			</description>
+			<option linkto="1">
+				Torno indietro, non c'è altra scelta.
+				<stat name="x" change="-1" />
+			</option>
+         	</paragraph>
+		<paragraph id="3" type="basic">
+			<description>
+				Il corridoio vira improvvisamente verso sinistra. Questo labirinto sembra non voler finire più.
+			</description>
+			<option linkto="4">
+				Torno indietro, non mi fido di questa strada.
+				<stat name="x" change="-1" />
+			</option>
+			<option linkto="6">
+				Dietro la curva potrebbe esserci l'uscita.
+				<stat name="y" change="1" />
+			</option>
+         	</paragraph>
+		<paragraph id="4" type="basic">
+			<description>
+				Un altro bivio. Tutte queste strade sembrano messe lì solo per confondere i viaggiatori.
+			</description>
+			<option linkto="1">
+				Ritorno al bivio precedente, era meglio non perdere l'orientamento.
+				<stat name="y" change="-1" />
+			</option>
+			<option linkto="3">
+				Mi incammino verso ovest.
+				<stat name="x" change="1" />
+			</option>
+			<option linkto="5">
+				Mi incammino verso est.
+				<stat name="x" change="1" />
+			</option>
+         	</paragraph>
+		<paragraph id="5" type="basic">
+			<description>
+				Un vicolo cieco, ancora.
+In un punto, però, il muro sembra cedere, e lasciar passare uno spiraglio.
+Pur cercando di aprire un varco, però, non riesci a concludere nulla.
+			</description>
+			<option linkto="4">
+				Torno indietro, non posso fare altro.
+				<stat name="x" change="-1" />
+			</option>
+         	</paragraph>
+		<paragraph id="6" type="basic">
+			<description>
+				Sì, dietro la curva sembra esserci una piccola luce! Ma il terreno comincia a salire, che cosa fai?
+			</description>
+			<option linkto="3">
+				Torno indietro, mi sembra troppo strano.
+				<stat name="y" change="1" />
+			</option>
+			<option linkto="7">
+				Forse è l'uscita, vado avanti.
+				<stat name="x" change="1" />
+			</option>
+         	</paragraph>
+		<paragraph id="7" type="basic">
+			<description>
+				Il corridoio prosegue ancora verso est, ma ad un certo punto in terra trovi un buco. Che fare?
+			</description>
+			<option linkto="5">
+				Provo a calarmi.
+				<stat name="x" change="1" />
+				<stat name="y" change="-1" />
+			</option>
+			<option linkto="6">
+				Torno indietro.
+				<stat name="x" change="-1" />
+			</option>
+			<option linkto="8">
+				Non posso lasciarmi distrarre, vado verso la luce che vedo in fondo.
+				<stat name="x" change="1" />
+			</option>
+         	</paragraph>
+		<paragraph id="8" type="basic" ending="true">
+			<description>
+				Finalmente l'uscita!
+Percorri gli ultimi passi verso la luce del sole, mentre il vento comincia a scompigliarti i capelli. Ce l'hai fatta, e tenere traccia dei punti in cui ti spostavi è stata la tua salvezza!
+			</description>
+         	</paragraph>
+    </story>
+</storygame>

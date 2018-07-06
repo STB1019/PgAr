@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Programma Arnaldo 2018
+File XML di testing per il modulo 6.
+
+Il seguente documento è stato prodotto da Michele Dusi per lo Student Branch IEEE dell'Università degli Studi di Brescia.
+-->
+<storygame>
+	<story title="Storia di testing - Modulo 6" size="5">
+		<paragraph id="0" type="basic">
+			<description>
+Questo è il paragrafo iniziale, denotato con id=0.
+			</description>
+			<option linkto="1">
+Seleziona questa opzione per muoverti verso il nodo "loot".
+			</option>
+			<option linkto="2">
+Seleziona questa opzione per muoverti verso il nodo "gate". Per attraversarlo con successo avrai bisogno dello strumento "strumentopoloMisterioso".
+			</option>
+         	</paragraph>
+		<paragraph id="1" type="loot">
+			<description>
+Questo è il paragrafo con tipologia "loot". In questo momento hai guadagnato lo strumento "strumentopoloMisterioso".
+			</description>
+			<item name="strumentopoloMisterioso" />
+			<option linkto="0">
+Seleziona questa opzione per ritornare al nodo iniziale.
+			</option>
+         	</paragraph>
+		<paragraph id="2" type="gate">
+			<item name="strumentopoloMisterioso" />
+			<option linkto="4">
+Questo testo non verrà visualizzato. L'opzione viene selezionata se lo strumento è presente nell'inventario.
+			</option>
+			<option linkto="3">
+Questo testo non verrà visualizzato. L'opzione viene selezionata se lo strumento NON è presente nell'inventario.
+			</option>
+         	</paragraph>
+		<paragraph id="3" type="basic">
+			<description>
+Questo è un paragrafo intermedio, visualizzato quando il paragrafo "gate" non trova lo strumento all'interno dell'inventario.
+			</description>
+			<option linkto="1">
+Selezionando questa opzione si torna al paragrafo iniziale.
+			</option>
+         	</paragraph>
+		<paragraph id="4" type="basic" ending="true">
+			<description>
+Questo è il paragrafo terminale; è raggiungibile solo se si attraversa il paragrafo "gate" con lo strumento richiesto.
+Si faccia attenzione che in questo paragrafo NON sia più presente lo strumento (poiché estratto dall'inventario).
+			</description>
+         	</paragraph>
+    </story>
+</storygame>
